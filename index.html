@@ -57,14 +57,19 @@
       </div>
     </header>
     <main class="main">
+
+      <!-- HERO -->
+
       <section class="hero">
         <div class="conteiner">
           <h1 class="hero-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-          <button class="hero-button" type="button">Замовити послугу</button>
+          <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="advantage section">
+
         <!--Переваги-->
+
         <div class="conteiner">
           <ul class="feature">
             <li>
@@ -117,33 +122,45 @@
           </ul>
         </div>
       </section>
+
+        <!-- Чим ми займаємось -->
+        
       <section class="examples section">
         <div class="conteiner">
           <h2 class="section-title">Чим ми займаємося</h2>
-          <ul class="examples-list">
-            <li>
+          <ul class="example-list">
+            <li class="example-item">
               <img
-                class="examples-img"
+                class="example-img"
                 src="./images/box1.jpg"
                 alt="box1"
                 width="370"
               />
+              <div class="example-wraper">
+              <p class="example-text">десктопні додатки</p>
+              </div>
             </li>
-            <li>
+            <li class="example-item">
               <img
-                class="examples-img"
+                class="example-img"
                 src="./images/box2.jpg"
                 alt="box2"
                 width="370"
               />
-            </li>
-            <li>
+               <div class="example-wraper">
+              <p class="example-text">Мобільні додатки</p>
+              </div>
+            </li >
+            <li class="example-item">
               <img
-                class="examples-img"
+                class="example-img"
                 src="./images/box3.jpg"
                 alt="box3"
                 width="370"
               />
+               <div class="example-wraper">
+              <p class="example-text">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -417,5 +434,16 @@
         </div>
       </div>
     </footer>
+    <!-- MODAL -->
+    <div class="backdrop is-hidden" data-modal >
+      <div class="modal" >
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="btn-logo" >
+            <use href="./symbol-defs.svg#Vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
